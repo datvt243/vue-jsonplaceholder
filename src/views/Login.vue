@@ -46,7 +46,7 @@ export default {
           _this.user = user;
         })
         .catch(() => {
-          _this.user = { err: "Tài khoản không tồn tại"};
+          _this.user = { err: "Tài khoản không tồn tại" };
         });
       if (!_this.user.err) {
         this.setUserLogin(_this.user);

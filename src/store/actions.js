@@ -12,7 +12,7 @@ export default {
         })
         .then((json) => {
           json.map((item) => {
-            item.user = { email: "" }
+            item.user = { email: "" };
           });
           resolve(json);
         })
@@ -179,6 +179,5 @@ export default {
         .then((json) => resolve(json))
         .catch((err) => reject(err));
     });
-  }
-
+  },
 };
